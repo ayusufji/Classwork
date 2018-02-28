@@ -25,4 +25,15 @@ public class Fraction implements Comparable<Fraction>
     {
 
     }
+
+    @Override
+    public boolean equals(Object o)
+    {
+        if (o instanceof Fraction)
+        {
+            return this.compareTo((Fraction) o) == 0;
+        }
+        return false;
+    }
+
 }
